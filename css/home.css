@@ -8,10 +8,10 @@
                         padding:0;
                         box-sizing: border-box;
                     }
-                    @font-face {
-                        font-family: 'Electronica', serif;
-                        src: url('../assets/fonts/Nunito-VariableFont_wght.ttf');
-                    }
+@font-face {
+    font-family: 'Electronica', serif;
+    src: url('../assets/fonts/Nunito-VariableFont_wght.ttf');
+}
                     
                             /* Zona De Especifaciones Grales*/
                     
@@ -53,9 +53,7 @@
                         font-size:1cm;
                         font-family: 'Nunito', sans-serif;
                     }
-                    #grids{
                     
-                    }
                     
                             /* Zona De Etiquietas Especificas */
                     
@@ -118,7 +116,8 @@
                     }
                     .introduccion{
                         padding: 21px 25px;
-                        background-image: linear-gradient(to left, rgb(110, 110, 110), rgb(110, 110, 110));
+                        background-color: rgb(92, 92, 92);
+                        border-radius: 6%;
                     }
                     .introduccion__texto{
                         color: black;
@@ -149,11 +148,15 @@
                     .footer{
                         font-size: small;
                         font-family: Verdana, Geneva, Tahoma, sans-serif;
-                        background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
+                        background-color:black;
                         padding: 5px 10px;
                     }
                     .seccion2{
-                    
+                        background-color: rgb(92, 92, 92);
+                        border-radius: 5%;
+                        margin-left: 3%;
+                        margin-right: 3%;
+                        
                     }
                         /* Flex Box */
                     
@@ -202,30 +205,53 @@
                         border-radius: 5%;
                         
                     }
-                    .grid__padre-header{
-                        margin: auto;
-                        display: grid;
-                        grid-template-columns: repeat(3, auto);
-                        grid-template-rows: repeat(4, auto);
-                        background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);    
-                        justify-content: stretch;
-                        align-content: center;
-                    }
+.grid__padre-header{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(4, auto);
+            background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);    
+            justify-content: stretch;
+            align-content: center;
+}
                     /* Estructura de las paginas */
                     .grid__estructrua--armeria{
                         display: grid;
                         grid-template-areas: 'header header header' 'main main main' 'footer footer footer';
                         align-content: center;
                     }
-                    #grid_armeria_1{
-                        grid-column: header;
-                    }
-                    #grid_armeria_2{
-                        grid-area: main;
-                    }
-                    #grid_armeria_2 p{
-                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                    }
-                    #grid_armeria_3{
-                        grid-area: footer;
-                    }
+#grid_armeria_1{
+            grid-column: header;
+}
+#grid_armeria_2{
+            grid-area: main;
+}
+#grid_armeria_2 p{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#grid_armeria_3{
+            grid-area: footer;
+}
+.grid__estructrua--index{
+    display: grid;
+    grid-template-areas: 'header header header' 'main main main' 'footer footer footer';
+    align-content: center;
+}
+#grid_index_1{
+    grid-column: header;
+}
+#grid_index_2{
+    grid-area: main;
+    background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
+}
+#grid_index_3{
+    grid-area: footer;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
+    align-items: center;
+    padding: 10px;
+}
