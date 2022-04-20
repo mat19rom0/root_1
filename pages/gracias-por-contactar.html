@@ -8,15 +8,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="../sass/home.css" />
+        <link rel="stylesheet" href="../css/home.css" />
         <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap-grid.min.css" />
     </head>
     <body class="grid">
-        <header class="centrado container-fluid border border-dark">
+        <header>
+            <img src="http://localhost:52330/assets/images/logo.png" alt="logo" />
             <br />
-            <nav class="navbar">
+            <nav class="gradiente">
                 <!--!!!!!!!!AÑADILE EL STICKY NO SEAS IDIOTA!!!!!!!!-->
-                <img src="http://localhost:52330/assets/images/logo.png" alt="logo" />
                 <ul class="flex-padre--nowrap">
                     <li><a class="navegacion__lista" href="../index.html">Inicio</a></li>
                     <li><a class="navegacion__lista" href="../pages/armeria.html">Armeria</a></li>
@@ -25,8 +25,15 @@
                     <li><a class="navegacion__lista" href="../pages/legalidad.html">Legalidad</a></li>
                 </ul>
             </nav>
-            <br />
+            <div id="scroll-container">
+                <div id="scroll-text">
+                    Este Sitio Esta En Construccion. Reporte Cualquier Error
+                    <a class="gris" href="./pages/contacto.html">Aqui.</a>
+                </div>
+            </div>
         </header>
+        <br />
+        <br />
         <section>
             <article class="background__blanco centrado container-fluid">
                 <p>Muchas Gracias Por Su Mensaje. Nos Aseguraremos De Leerlo Pronto.</p>
@@ -34,8 +41,8 @@
         </section>
 
         <br />
-        <footer id="grid_index_3" class="footer centrado">
-            <p class="blanco">Todos Los Derechos Reservados 2022</p>
+        <footer class="footer centrado borde-negro">
+            <p class="negro">Todos Los Derechos Reservados 2022</p>
         </footer>
     </body>
 </html>

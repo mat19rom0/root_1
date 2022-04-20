@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../sass/home.css" />
+    <link rel="stylesheet" href="../css/home.css" />
     <link
       rel="stylesheet"
       href="../libs/bootstrap/css/bootstrap-grid.min.css"
@@ -19,71 +19,59 @@
   </head>
   <body class="grid grid__estructrua--armeria">
     <header id="grid_armeria_1">
-      <img src="http://localhost:52330/assets/images/logo.png" alt="logo" />
-      <br />
-      <nav class="gradiente">
-        <!--!!!!!!!!AÑADILE EL STICKY NO SEAS IDIOTA!!!!!!!!-->
-        <ul class="flex-padre--nowrap">
-          <li><a class="navegacion__lista" href="../index.html">Inicio</a></li>
-          <li>
-            <a class="navegacion__lista" href="../pages/armeria.html"
-              >Armeria</a
-            >
-          </li>
-          <li>
-            <a class="navegacion__lista" href="../pages/fotos-de-gatos.html"
-              >Gatos</a
-            >
-          </li>
-          <li>
-            <a class="navegacion__lista" href="../pages/contacto.html"
-              >Contacto</a
-            >
-          </li>
-          <li>
-            <a class="navegacion__lista" href="../pages/legalidad.html"
-              >Legalidad</a
-            >
-          </li>
-        </ul>
-      </nav>
+        <img src="http://localhost:52330/assets/images/logo.png" alt="logo">
+        <br>
+        <nav class="gradiente"> <!--!!!!!!!!AÑADILE EL STICKY NO SEAS IDIOTA!!!!!!!!-->
+            <ul class="flex-padre--nowrap">
+                <li><a class ="navegacion__lista" href="../index.html">Inicio</a></li>
+                <li><a class ="navegacion__lista" href="../pages/armeria.html">Armeria</a></li>
+                <li><a class ="navegacion__lista" href="../pages/fotos-de-gatos.html">Gatos</a></li>
+                <li><a class ="navegacion__lista" href="../pages/contacto.html">Contacto</a></li>
+                <li><a class ="navegacion__lista" href="../pages/legalidad.html">Legalidad</a></li>
+            </ul>
+        </nav>
+        <div id="scroll-container">
+            <div id="scroll-text">Este Sitio Esta En Construccion. Reporte Cualquier Error <a class="gris" href="./pages/contacto.html">Aqui.</a></div>
+        </div>
     </header>
     <br />
-    <main class="fondo_blanco main-armeria">
-        <div class="container">
+    <main class="introduccion main-armeria">
+      <br>
+      <br>
+        <div id="grid_armeria_2" class="container">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 borde-negro borde-negro__card">
           <div class="card">
-            <img style="height: 70%; width: 100%;" class="card-img-top" src="../assets/images/AR-15.jpg" alt="AR-15">
+            <img style="height: 70%; width: 100%;" class="card-img-top card_dimensions borde" src="../assets/images/AR-15.jpg" alt="AR-15">
           <div class="card-body">
-            <h5 class="blanco centrado">AR-15 (.223)</h5>
-            <p class="blanco centrado">U$D 20000</p>
+            <h5 class="negro centrado">AR-15 (.223)</h5>
+            <p class="negro centrado">U$D 20000</p>
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-4 borde-negro borde-negro__card">
           <div class="card">
-            <img style="height: 60%; width: 90%;" class="card-img-top card_dimensions" src="../assets/images/M9S.jpg" alt="M9s">
+            <img style="height: 60%; width: 90%;" class="card-img-top card_dimensions borde" src="../assets/images/M9S.jpg" alt="M9s">
           <div class="card-body">
-            <h5 class="blanco centrado">Beretta M9s (9mm)</h5>
-            <p class="blanco centrado">U$D 7000</p>
+            <h5 class="negro centrado">Beretta M9s (9mm)</h5>
+            <p class="negro centrado">U$D 7000</p>
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-4 borde-negro borde-negro__card">
           <div class="card">
-            <img style="height: 150%; width: 120%;" class="card-img-top" src="../assets/images/Remington 870.jpg" alt="Remington 870">
+            <img style="height: 150%; width: 120%;" class="card-img-top card_dimensions borde" src="../assets/images/Remington 870.jpg" alt="Remington 870">
           <div class="card-body">
-            <h5 class="blanco centrado">Remington 870 (12 Gauge)</h5>
-            <p class="blanco centrado">U$D 10000</p>
+            <h5 class="negro centrado">Remington 870 (12 Gauge)</h5>
+            <p class="negro centrado">U$D 10000</p>
           </div>
         </div>
       </div>
       </div>
       <br />
     </main>
-    <footer id="grid_index_3"class="footer centrado">
-    <p class="blanco">Todos Los Derechos Reservados 2022</p>
+    <footer id="grid_armeria_3"class="footer centrado borde-negro">
+    <p class="negro">Todos Los Derechos Reservados 2022</p>
 </footer>
   </body>
 </html>
