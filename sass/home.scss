@@ -85,18 +85,29 @@ nav {
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F76%2F5b%2F7c%2F765b7c2c847900a86e7d03430d091c02.jpg&f=1&nofb=1");
 }
 .gradiente {
-    background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(14, 14, 14), rgb(0, 0, 0));
 }
 
 /* Zona De Etiquietas De Objetos (Y Modificadores) */
-.navegacion__lista {
-    color: black;
-    font-family: "Nunito", sans-serif;
-    font-size: larger;
-    /* background-color: black; */
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0% 10%;
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
+    align-items: center;
+    padding: 10px;
+    &__lista {
+        // color: black;
+        font-family: "Nunito", sans-serif;
+        font-size: larger;
+        /* background-color: black; */
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0% 10%;
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+    }
 }
 .logo {
     padding: auto;
@@ -117,29 +128,29 @@ nav {
     border-radius: 20px;
     border: 5px solid black;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.introduccion__texto {
-    color: black;
-    font-size: 21px;
-    font-family: "Nunito", sans-serif;
-    padding: 15px 21px 15px 21px;
-}
-.introduccion__titulo {
-    color: black;
-    font-size: 36px;
-    font-family: "Courier New", Courier, monospace;
-    padding: 15px 21px 15px 21px;
-}
-.introduccion__link {
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-family: "Nunito", sans-serif;
-    padding: 3px 7px;
-    border-radius: 10px;
-    background-color: black;
-    text-decoration: none;
-    &:hover {
-        color: purple;
+    &__texto {
+        color: black;
+        font-size: 21px;
+        font-family: "Nunito", sans-serif;
+        padding: 15px 21px 15px 21px;
+    }
+    &__titulo {
+        color: black;
+        font-size: 36px;
+        font-family: "Courier New", Courier, monospace;
+        padding: 15px 21px 15px 21px;
+    }
+    &__link {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-family: "Nunito", sans-serif;
+        padding: 3px 7px;
+        border-radius: 10px;
+        background-color: black;
+        text-decoration: none;
+        &:hover {
+            color: purple;
+        }
     }
 }
 .ultimos-productos {
@@ -264,18 +275,10 @@ nav {
     grid-area: footer;
 }
 
-.navbar {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
-    align-items: center;
-    padding: 10px;
-}
-
 /*Codigo Copiado X Animaciones*/
 
 #scroll-container {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 5px;
     overflow: hidden;
     background-color: whitesmoke;
@@ -287,9 +290,11 @@ nav {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 
-    -moz-animation: my-animation 15s linear infinite;
-    -webkit-animation: my-animation 15s linear infinite;
-    animation: my-animation 15s linear infinite;
+    -moz-animation: my-animation 40s linear infinite;
+    -webkit-animation: my-animation 40s linear infinite;
+    animation: my-animation 40s linear infinite;
+    font-weight: bold;
+    color: red;
 }
 
 /* for Firefox */
@@ -343,8 +348,20 @@ borde-negro {
 $redes: (/*Declaramos nuestro mapa*/ twitter: #55acee, facebook: #3a5795, send-mail: #c25e30);
 @each $red, $color in $redes {
     .btn--#{$red} {
-        background-color: $color;
+        background-color: map-get($redes, "twitter");
     }
 }
-.r870 {
+
+.redes__imagenes {
+    height: 30%;
+    width: 5%;
+    border-radius: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.redes_fondo {
+    border: white;
+    border-radius: 10px;
+    border-width: 10px;
 }
