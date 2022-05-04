@@ -346,12 +346,11 @@ borde-negro {
 }
 
 $redes: (/*Declaramos nuestro mapa*/ twitter: #55acee, facebook: #3a5795, send-mail: #c25e30);
-@each $red, $color in $redes {
-    .btn--#{$red} {
-        background-color: map-get($redes, "twitter");
-    }
-}
 
+@mixin bordes($width, $radius) {
+    border-radius: $radius;
+    border-width: $width;
+}
 .redes__imagenes {
     height: 30%;
     width: 5%;
@@ -362,6 +361,9 @@ $redes: (/*Declaramos nuestro mapa*/ twitter: #55acee, facebook: #3a5795, send-m
 }
 .redes_fondo {
     border: white;
-    border-radius: 10px;
-    border-width: 10px;
+    @include bordes(10px, 10px);
+}
+.redes__imagenes--twitter {
+    @extend .redes__imagenes;
+    background-color: map-get($redes, twitter);
 }

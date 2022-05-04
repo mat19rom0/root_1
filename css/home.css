@@ -367,19 +367,7 @@ borde-negro {
   border-width: 10px;
 }
 
-.btn--twitter {
-  background-color: #55acee;
-}
-
-.btn--facebook {
-  background-color: #55acee;
-}
-
-.btn--send-mail {
-  background-color: #55acee;
-}
-
-.redes__imagenes {
+.redes__imagenes, .redes__imagenes--twitter {
   height: 30%;
   width: 5%;
   border-radius: 18px;
@@ -392,6 +380,10 @@ borde-negro {
   border: white;
   border-radius: 10px;
   border-width: 10px;
+}
+
+.redes__imagenes--twitter {
+  background-color: #55acee;
 }
 
 /*# sourceMappingURL=home.css.map */
