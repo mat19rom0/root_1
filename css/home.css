@@ -42,7 +42,7 @@ h2 {
 
 nav {
   position: sticky;
-  top: 20px;
+  top: 0;
   background-color: #5f9ea0;
 }
 
@@ -104,6 +104,7 @@ nav {
   background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
   align-items: center;
   padding: 10px;
+  top: 25px;
 }
 .navbar__lista {
   font-family: "Nunito", sans-serif;
@@ -114,8 +115,7 @@ nav {
   padding: 0% 10%;
 }
 .navbar__lista:hover {
-  color: black;
-  background-color: white;
+  color: grey;
 }
 
 .logo {
@@ -258,8 +258,10 @@ nav {
 /* Estructura de las paginas */
 .grid__estructrua--armeria {
   display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header" "main_left main main_right" "footer footer footer";
   align-content: center;
+  position: relative;
+  padding-bottom: 58px;
 }
 
 #grid_armeria_1 {
@@ -282,11 +284,10 @@ nav {
 
 .grid__estructrua--index {
   display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header" "main_left main main_right" "footer footer footer";
   align-content: center;
   position: relative;
   padding-bottom: 58px;
-  min-height: 100vh;
 }
 
 #grid_index_1 {
@@ -294,8 +295,16 @@ nav {
 }
 
 #grid_index_2 {
-  grid-area: main;
-  background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
+  grid-area: main_left main main_right;
+  top: 10vh;
+}
+
+#grid_index_2-left {
+  grid-area: main_left;
+}
+
+#grid_index_2-right {
+  grid-area: main_right;
 }
 
 #grid_index_3 {
