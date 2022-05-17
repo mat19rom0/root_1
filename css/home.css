@@ -15,7 +15,7 @@ ul {
   text-decoration: none;
 }
 ul li {
-  color: rgb(0, 0, 116);
+  color: black;
   text-decoration: none;
 }
 
@@ -393,6 +393,67 @@ borde-negro {
 
 .redes__imagenes--twitter {
   background-color: #55acee;
+}
+
+.grid__estructrua--gatos {
+  display: grid;
+  grid-template-areas: "header header header" "main_left main main_right" "footer footer footer";
+  align-content: center;
+  position: relative;
+  padding-bottom: 58px;
+}
+
+#grid_gatos_1 {
+  grid-column: header;
+}
+
+#grid_gatos_2 {
+  grid-area: main;
+  justify-content: space-around;
+  margin: 1vh;
+  background-image: linear-gradient(to left, gray, rgb(184, 184, 184), gray);
+  align-items: center;
+  padding: 10px;
+  top: 25px;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+#grid_gatos_3 {
+  grid-area: footer;
+}
+
+.imagenes__gatos {
+  height: 55%;
+  width: 85%;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  border-width: 5px;
+  margin: 5vh;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+#gallery {
+  line-height: 0;
+  -webkit-column-count: 3;
+  /* split it into 5 columns */
+  -webkit-column-gap: 5px;
+  /* give it a 5px gap between columns */
+  -moz-column-count: 3;
+  -moz-column-gap: 5px;
+  column-count: 3;
+  column-gap: 5px;
+}
+
+.izquierda_gap {
+  padding-right: 25vh;
+  text-align: center;
+}
+
+.derecha_gap {
+  padding-left: 25vh;
+  text-align: center;
 }
 
 /*# sourceMappingURL=home.css.map */
